@@ -12,5 +12,4 @@ public interface PositionService {
 	PositionEntity updatePosition(PositionEntity position, int id);
 	List<PositionEntity> FindAllQ();
 	PositionEntity deletePosition(int id, PositionEntity position);
-
 }

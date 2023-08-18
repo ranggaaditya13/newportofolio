@@ -146,7 +146,7 @@
 									<td th:text="${karyawan.birthDate}"></td>
 									<td th:text="${karyawan.positionId}"></td>
 									<td th:text="${karyawan.idNumber}"></td>
-									<td th:text="${karyawan.gender}"></td>
+									<td id="gender" th:text="${karyawan.gender}"></td>
 									<td><a
 										th:href="@{/test/showFormForUpdate/{id}(id=${karyawan.id})}"
 										class="btn btn-primary">Update</a> <a
@@ -192,5 +192,21 @@
 	<!-- AdminLTE App -->
 	<script src="../lte/dist/js/adminlte.min.js"></script>
 	<!-- AdminLTE for demo purposes -->
+	
+	<!-- <script>
+	let gender = document.getElementById("gender").value;
+	if(gender == 1){
+		gender = "Laki-Laki";
+	}else{
+		gender = "perempuan";
+	}
+	document.getElementById("gender").innerHTML = gender;
+	</script> -->
+	
+	
+<!--
+
+//-->
+</script>
 </body>
 </html>
