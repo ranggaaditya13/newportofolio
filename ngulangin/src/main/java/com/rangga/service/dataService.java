@@ -12,19 +12,12 @@ import com.rangga.repository.dataRepository;
 @Service
 @Transactional
 public class dataService {
-
+	
 	@Autowired
 	private dataRepository dr;
 	
-	public List<dataModel> getAll(){
-		return dr.getAll();
+	public List<dataModel> dataAll(){
+		return dr.findAll();
 	}
-	
-	public List<dataModel> getWithHighPrice(){
-		return dr.getWithHighPrice();
-	}
-	
-	public List<String> getNameOnly(){
-		return dr.getNameOnly();
-	}
+
 }

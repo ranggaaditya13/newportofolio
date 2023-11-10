@@ -15,5 +15,7 @@ public interface dataRepository extends JpaRepository<dataModel, String>{
 	@Query(value = "select * from barang where harga > 10000",nativeQuery = true)
 	public List<dataModel> getWithHighPrice();
 
+	@Query(value = "select nama from barang where harga > 10000", nativeQuery = true)
+	public List<String> getNameOnly();
 
 }

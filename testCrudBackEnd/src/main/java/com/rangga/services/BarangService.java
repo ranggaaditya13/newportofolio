@@ -19,5 +19,9 @@ public class BarangService {
 	public List<BarangModel> getData() {
 		return br.findAll();
 	}
+	
+	public BarangModel saveData(BarangModel model) {
+		return br.save(model);
+	}
 
 }
